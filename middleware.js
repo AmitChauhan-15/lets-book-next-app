@@ -16,5 +16,10 @@ export const middleware = async (request) => {
 
 export const config = {
   matcher: ["/", "/hotels", "/profile", "/profile/reservation"],
-  unstable_allowDynamic: ["**/node_modules/@react-email*/**/*.mjs*"],
+  unstable_allowDynamic: [
+    // allows a single file
+    "/app/_lib/db.js",
+    // use a glob to allow anything in the function-bind 3rd party module
+    "/node_modules/mongoose/dist/**",
+  ],
 };
