@@ -16,4 +16,5 @@ export const middleware = async (request) => {
 
 export const config = {
   matcher: ["/", "/hotels", "/profile", "/profile/reservation"],
+  unstable_allowDynamic: ["**/node_modules/@react-email*/**/*.mjs*"],
 };
