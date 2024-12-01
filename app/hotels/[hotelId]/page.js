@@ -23,7 +23,7 @@ async function BookHotel({ params }) {
     ];
   };
 
-  if (!hotel) return <div className="flex h-full justify-center items-center">Hotel's detail not found!</div>;
+  if (!hotel) return <div className="flex h-full justify-center items-center">Hotel&apos;s detail not found!</div>;
   return (
     <section className="grid grid-cols-12 gap-6 h-full">
       <div className="col-span-8 flex flex-col gap-2">
